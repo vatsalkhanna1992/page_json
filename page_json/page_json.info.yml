@@ -1,0 +1,6 @@
+name: Page JSON
+description: This module provides JSON representation of node if node type is a page.
+type: module
+core: 8.x
+dependencies:
+ - serialization:serialization

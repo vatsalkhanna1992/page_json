@@ -1,0 +1,12 @@
+siteinfo.json:
+  path: '/page_json/{apikey}/{nid}'
+  defaults:
+    _controller: 'Drupal\page_json\Controller\PageJsonController::jsonData'
+  options:
+    parameters:
+      node:
+        type: entity:node
+      apikey:
+        type: 'apikey'
+  requirements:
+    _permission: 'access content'
